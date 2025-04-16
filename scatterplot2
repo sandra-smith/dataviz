@@ -1,0 +1,112 @@
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'scatter',
+    data: {
+        datasets: [{
+            data: [
+                { x: 71.5, y: 3678 },
+            ],
+            label: "China",
+            borderColor: "#F28266",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+
+        }, {
+            data: [
+                { x: 61.1, y: 2548 },
+            ],
+            label: "India",
+            borderColor: "#F17063",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+
+        }, {
+            data: [
+                { x: 77.1, y: 45986 },
+            ],
+            label: "US",
+            borderColor: "#EF5D60",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+
+        }, {
+            data: [
+                { x: 68.3, y: 5878 },
+            ],
+            label: "Indonesia",
+            borderColor: "#EE4F64",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+        }, {
+            data: [
+                { x: 71.9, y: 11461 },
+            ],
+            label: "Brazil",
+            borderColor: "#EC4067",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+        }, {
+            data: [
+                { x: 65.4, y: 13173 },
+            ],
+            label: "Russia",
+            borderColor: "#D9376D",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+        }, {
+            data: [
+                { x: 62.6, y: 3366 },
+            ],
+            label: "Pakistan",
+            borderColor: "#C62D72",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+        }, {
+            data: [
+                { x: 65.8, y: 1632 },
+            ],
+            label: "Bangladesh",
+            borderColor: "#B32478",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+        }, {
+            data: [
+                { x: 81.1, y: 32193 },
+            ],
+            label: "Japan",
+            borderColor: "#A01A7D",
+            backgroundColor: "rgb(255,165,0,0.1)",
+            borderWidth: 2,
+        }
+        ]
+    },
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: 'Life Expectancy vs GDP per Capita',
+                font: {
+                    size: 24
+                }
+            },
+            subtitle: {
+                display: true,
+                text: 'A comparison of life expectancy across top countries. The U.S. has the highest life expectancy rate in comparison to GDP per Capita'
+            }
+        },
+        scales: {
+            y: {
+                title: {
+                    display: true,
+                    text: 'GDP Per Capita'
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                    text: 'Life Expectancy'
+                }
+            }
+        }
+    }
+});
