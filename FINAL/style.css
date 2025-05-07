@@ -1,0 +1,122 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #d3d9d4;
+    margin: 0;
+    padding: 0 20px 40px;
+    line-height: 1.6;
+    color: #000;
+}
+
+a {
+    color: #336699;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #748d92;
+    border-bottom: 2px solid #124e66;
+    margin-bottom: 40px;
+    border-radius: 0 0 12px 12px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.byline {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #000;
+}
+
+.main-layout {
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+    gap: 40px;
+}
+
+.left-column {
+    width: 30%;
+    padding: 10px;
+}
+
+.right-column {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.chart-pair {
+    display: flex;
+    gap: 20px;
+}
+
+.chart-box {
+    flex: 1;
+    background: #e3e7e5;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.centered-chart {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.chart-box img,
+.chart-box .flourish-embed {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.map {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.map-box {
+    background: #e3e7e5;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.text-align {
+    text-align: center;
+    padding-top: 20px;
+}
